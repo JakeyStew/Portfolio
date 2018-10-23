@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<!--  ©Jake Stewart 2015 All Rights Reserved  !-->
+<html lang=en>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" />
+		<link rel="icon" type="image/png" href="res/logo/logo_favicon_design.ico"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+		<title>Jake Stewart | Dev of Things</title>
+	</head>
+
+	<body>
+		<header>
+		<h1 class="logo"><img src="res/logo/Logo_Horz_4x1_No_Drop.png" alt="Jake Stewart"></h1>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		<nav>
+			<ul>
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#About">About</a></li>
+				<li><a href="#Projects">Projects</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+		</nav>
+		<label for="nav-toggle" class="nav-toggle-label">
+			<span></span>
+		</label>
+		</header>
+		
+		<!-- Main Content -->
+		<div id="Home" class="welcome">
+				<!--<video autoplay muted loop id="myVideo">
+						<source src="res/forest-walk.mp4" type="video/mp4">
+					</video>-->
+			<h1 class="welcome-heading">Welcome to my<span>Portfolio</span></h1>
+		</div>
+		
+		<section id="About" class="about">
+			<div class="about-middle">
+				<img src="res/about/about-me.png" alt="Me">
+				<h2>All about me</h2>
+				<p>I am an entry level designer and junior software programmer with a multitude of small projects. I've spent a considerable amount of time tinkering with languages such as C++, Python, JavaScript, HTML and CSS, whilst studying for my MComp at USW (University South Wales). 
+					Although, I'd like to say I'm competent but I always find myself learning something new that makes me look like a complete newbie or out of my depth (the beauty of evolving technology right?)
+					<br><br>
+					For the past year I have been working as a Junior Software Engineer, definitely not the most exciting aspect of the industry but a valuable one none the less! You see, as you leave university 
+					expecting to be the next big thing you essentially fall into the industry and get knocked back a peg or two by some form of standard or technology that throws a tsunami of pre-dinosaur code your way that is only decipherable by the gods themselves. 
+					<br><br>
+					But alas, what doesn't kill you makes you stronger (or so I've heard) 
+			</div>
+		</section>
+		
+		<section id="Projects" class="projects">
+			<h1>Projects</h1>
+			<p>Just a small selection of my best and most satisfied works, alongside a couple little W.I.Ps I'm fond of.</p>
+			<div class="project-items">
+			
+				<!-- Project Item 1 -->
+				<figure class="project-item featured">
+					<img src="res/project-imgs/mamsmatter-logo.png" alt="Project 1">
+					<figcaption>
+						<h2 class="project-title">Mams Matter</h2>
+						<p class="project-desc">A small website for a support group business based within the Welsh valleys.</p>
+						<a href="#" class="project-link">More info</a>
+					</figcaption>
+
+					<!--	Project Modal 1	-->
+					<div class="project-modal">
+						<button class="modal-close">
+							<svg x="0px" y="0px"
+							viewBox="0 0 30 17">
+						    <g transform="translate(-15 -15)">
+							   <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+								   35.8,16.5 37,17.7 	"/>
+						   </g>
+						   </svg>
+						</button>
+						<div class="project-header">
+							<div class="project-title-box">
+								<h2 class="project-title">Mams Matter - 2013</h2>
+								<p class="project-subtitle">Women's support group in Bleanua Gwent</p>
+							</div>
+						</div> <!-- /Project-Header -->
+						<div class="project-content">
+							<h3><i>Aim:</i></h3>
+							<p>A new start up business run by a local friend was in need of a fresh website to market the business within the Blaenau Gwent area.
+								 The intended design was to be simple and informative. </p>
+							
+							 <h4>Time Period:</h4>
+							<p>Given the business was fresh and has only been operational for a short period of time, this gave me a relatively long time-scale to produce a suitable site. 
+								From start to completion the project took 2 months.</p>
+							<img class="project-full-width" src="res/project-imgs/mamsmatter/mamsmatter_front.gif" alt="an image">
+							
+							<h4>Design:</h4>
+							<p>The overall design of the site was something I had pondered over for a period of time. 
+								Trying to get the right balance of simplicity for the user’s interactions whilst giving a useful amount of information to help the guide the user on what they required.</p>
+							
+								<h5>Nav:</h5>
+							<p>The navigation bar was relatively easy to implement with the use of a logo and some headings that utilised an auto scroll JQuery feature to scroll the page down to the correct section. 
+								<br>
+								The thinking behind this set up was that it minimised the amount of pages needed. Saving on loading times and bandwidth usage. Something I’m keen on implementing and constantly trying to improve my knowledge on.
+							</p>
+							
+							<h5>Layout:</h5>
+							<p>Layout is a very important aspect of any web design, thus its essential to get the layout to be simplistic in design and user friendly in interaction. Mams matter was no exception utilising a simple block section template.
+								 With each category e.g. Welcome, About, Contact etc… all being included within its own container.
+								<br>
+								<br>
+								Unfortunately, due to evolving technologies and being a newbie in the field, I found myself using floats rather than either the now commonly used Flexbox or CSS-Grids techniques. 
+							</p>
+
+							<h5>Colours:</h5>
+							<p>The colour scheme utilised was simple at best and intended to reflect the colours within the logo. Using a Red hue for prominent features and then white and dark grey for anything as background content.</p>
+
+							<h4>Stand Out Features:</h4>
+							<ul>
+								<li>Auto scroll via JQuery</li>
+								<li>Modal upon clicking an image</li>
+								<li>Image shake when hovering over them</li>
+								<li>Video implementation using JScript</li>
+							</ul>
+							<img class="project-pull-left" src="res/project-imgs/mamsmatter/mamsmatter_modal.gif" alt="an image">
+							<h4>Design Process Summary:</h4>
+							<p>Throughout the design process of this project, I noted a few things I’d consider redesigning if I were to come back to it. The main issues with the site I’d reconsider would mostly focus on the efficiency and scalability of the site.</p>
+							<h5>Responsiveness:</h5>
+							<p>My biggest concern with the site is responsiveness, due to the site only partially working when scaled down to mobile size. Given this was the first project I attempted to introduce mobile design I took a simplistic approach using media queries.
+								 Although this proved to only partially work due to the vast amount of possible screen dimensions, thus the site fails to scale properly under certain resolutions.</p>
+							<h5>Layout:</h5>
+							<p>The next concern was the use of floats and the display attribute to align items. Although this approach isn’t considered entirely wrong, 
+								It does lead to some complications that can be overcome using the newer Flexbox and CSS grids which I failed to incorporate into the design. Something for the future!</p>
+							<h5>Design Concept Process:</h5>
+							<p>When originally developing the site I never drew up any concepts or alternative designs other than what I was churning out at the time. After much thought I realise this is not only bad for the end product but also bad practice. 
+								<br>
+								<br>
+								With this knowledge, I would start again y first sketching up layouts and a colour palette for a theme and style, then using this design on the appropriate location of all elements whilst piecing the style on top to get an overview before spending countless hours coding.
+									</p>
+							<img class="project-pull-right" src="res/project-imgs/mamsmatter/mamsmatter_video.gif" alt="an image">
+						</div>
+					</div>
+					<!--	/Project Modal 1 End	-->
+				</figure>
+
+				<!-- Project Item 2 -->
+				<figure class="project-item">
+					<img src="res/project-imgs/idrive-logo.png" alt="Project 1">
+					<figcaption>
+						<h2 class="project-title">I-Drive Learning</h2>
+						<p class="project-desc">A small driving instruction school based within Newport, S.Wales.</p>
+						<a href="#" class="project-link">More info</a>
+					</figcaption>
+
+						<!--	Project Modal 2	-->
+						<div class="project-modal">
+								<button class="modal-close">
+									<svg x="0px" y="0px"
+									viewBox="0 0 30 17">
+									<g transform="translate(-15 -15)">
+									   <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+										   35.8,16.5 37,17.7 	"/>
+								   </g>
+								   </svg>
+								</button>
+								<div class="project-header">
+									<div class="project-title-box">
+										<h2 class="project-title">I-Driving Learner Instruction - 2012</h2>
+										<p class="project-subtitle">Driving Instruction school based in Newport, S.Wales</p>
+									</div>
+								</div> <!-- /Project-Header -->
+								<div class="project-content">
+										<h3><i>Aim:</i></h3>
+										<p>I-Drive Learner Driver School is a start-up driving instruction school based in Newport, South Wales. Being the start-up of a relative I saw the opportunity to dive into web development for the first time on a more commercial scale to what I had previously done. 
+											<br><br>
+											The site was aimed at pointing potential students in the right direction whilst giving a thorough detail on what is expected of them in terms of testing and lessons.
+											 </p>
+										
+										 <h4>Time Period:</h4>
+										<p>Given this was my first proper solo project and being a relative, the intended time period for completion was dependant on my ability to produce the site and when I felt confident it would satisfy the needs of the client.
+											<br><br>
+											In total the project took around 3 months to complete given my skill set and experience at the time.	
+										</p>
+										<img class="project-full-width" src="res/project-imgs/idrive/idrive_front.gif" alt="an image">
+										<h4>Design:</h4>
+										<p>The design of the site was simple utilising a single page design and then blocking each category into its own section. Given I was unexperienced in anything other than a simple box template design, 
+											I decided to explore and challenge myself to produce a more complicated design over my previous work.
+										</p>
+										
+											<h5>Nav:</h5>
+										<p>The navigation bar was placed as a sidebar over the conventional header space. This was due to incorporating a drop down box at the top of the screen that would drop in when the page was loading.</p>
+										
+											<h6>Drop Down:</h6>
+											<p>The drop down is a simple bar used to navigate between external sources for booking your theory/practical tests and allowing you to see the car used by I-Drive. Always nice to know what you’re going to be driving I think.</p>
+											<h6>Navigation Bar:</h6>
+											<p>		With the navigation bar on the side, it was simple enough to just incorporate the logo above with each link underneath. 
+												However, instead of using separate pages for the About, Contact etc… I used panels to keep the page loaded, saving on loading up different pages.
+											</p>
+										<h5>Layout:</h5>
+										<p>The layout was very easy and similar to my previous work with just floats and a single container element to house all other items. This did allow for quick implementation on a full sized desktop screen, although this has no mobile implementation thus gives a very poor experience on anything less than a conventional desktop screen.
+											<br>
+											<br>	
+											Overall I was fairly happy with the layout and given it was my first project outside of education I couldn’t have been happier to produce something for the world to see. 
+										</p>
+			
+										<h5>Colours:</h5>
+										<p>	Colours are generally a fickle thing when producing a website with no real concept designs to work from. As experienced with this design, I had done little to no concept work (Put this to my lack of experience shall we?) the colours were a bit iffy in the best of terms where some pieces of text blend in with the background and others don’t.
+											<br>
+											<br>
+											The idea was to keep the site as clean as possible using only blacks and whites similar to the logo however, I felt it left a lot of white space that could be filled with something more appealing to the eyes. Hence the use of a lovely background image of Newport itself. The issue with this? It left the white text difficult to read and vice versa with a black colour. So, I opted to include a background on each container for the text to make it more readable which worked flawlessly.
+											</p>
+			
+										<h4>Stand Out Features:</h4>
+										<ul>
+											<li>Image slideshow showing off the car used by I-Drive</li>
+											<li>Interactive Google map giving the location of Newport</li>
+											<li>Drop down bar with external links to the theory/practical site of the .gov website</li>
+										</ul>
+									<img class="project-pull-left" src="res/project-imgs/idrive/idrive_slideshow.gif" alt="an image">
+									<img class="project-pull-right" src="res/project-imgs/idrive/idrive_map.gif" alt="an image">
+
+									<h4>Design Process Summary:</h4>
+									<p>Reflecting on this design I feel a couple things could be switched up that allow for a more appealing look and user friendly experience. </p>
+									<h5>Responsiveness:</h5>
+									<p>Started with the mobile market would be the most influential aspect. By developing the site for a mobile audience to start and then porting that over to a desktop version would have been the correct procedure to follow. 
+										The biggest advantage of the mobile market for a driving instruction school is that the majority of potential clients see the driving instruction car and follow any links or number written on it rather than being at home and utilising a desktop.</p>
+									<h5>Colour:</h5>
+									<p>Colour stood out to be a bigger issue than anticipated for myself. Mainly due to the colour clashing with the whitespace or the image I decided to commit to after. Something I’d consider doing differently would be to sort a colour palette out with the intended background image, then create a template of 3-4 different designs I felt worked correctly. 
+										<br>
+										<br>
+										Another possible option for the current design would be to utilise opacity, a very underused feature by myself up until my portfolio design. 
+										</p>
+									<img class="project-pull-right" src="res/project-imgs/idrive/idrive_questions.gif" alt="an image">
+								</div>
+							</div>
+							<!--	/Project Modal 2 End	-->
+				</figure>
+
+					<!-- Project Item 3 -->
+				<figure class="project-item">
+					<img src="res/project-imgs/college-logo.png" alt="Project 1">
+					<figcaption>
+						<h2 class="project-title">BSA: British Space</h2>
+						<p class="project-desc">A site designed during my time spent at Coleg Gwent, S.Wales</p>
+						<a href="#" class="project-link">More info</a>
+					</figcaption>
+
+						<!--	Project Modal 3	-->
+						<div class="project-modal">
+								<button class="modal-close">
+									<svg x="0px" y="0px"
+									viewBox="0 0 30 17">
+									<g transform="translate(-15 -15)">
+									   <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+										   35.8,16.5 37,17.7 	"/>
+								   </g>
+								   </svg>
+								</button>
+								<div class="project-header">
+									<div class="project-title-box">
+										<h2 class="project-title">BSA - College Project - 2011/2012</h2>
+										<p class="project-subtitle">Concept for a British alternative to NASA</p>
+									</div>
+								</div> <!-- /Project-Header -->
+								<div class="project-content">
+										<h3><i>Aim:</i></h3>
+										<p>During my time studying at Coleg Gwent, South Wales I was tasked with producing a basic webpage for one of my assignments within the Web Development module. 
+											The site I had chosen to develop was a fictional concept of Britain having its own space agency similar to NASA. 
+										</p>
+										 <h4>Time Period:</h4>
+										<p>Given this was an assignment at an educational facility the time frame was based around the academic year, starting from the beginning of September and ending in the following June. 
+											<br><br>
+											The average amount of time to produce the site was roughly a two-three weeks in total due to working on it during the scheduled hours at college.	
+										</p>
+										<img class="project-full-width" src="res/project-imgs/college/college_front.gif" alt="an image">
+										<h4>Design:</h4>
+										<p>The design process was very simple due to how basic the page needed to be and being my intro into the world of Web design or Front end development. 
+											The main purpose of this design was to demonstrate an understanding of containers and the box-model template.
+										</p>
+											<h5>Nav:</h5>
+										<p>The navigation bar on this design was pre-generated form a site we were directed to by our lecturer. This was mainly to save time and wasn’t necessarily the main focus of the assignment.
+											 However, this does leave a lot of inconsistencies on the site such as how it doesn’t blend in with the colour scheme at all.
+										</p>
+
+										<h5>Layout:</h5>
+										<p>With layout being a crucial point, the site was developed around using the box-model template with a header, main content container and footer each clearly visible by their contents. 
+											With an image in the header and footer and then laying out the main content within the body section. A very simplistic design, but it works.
+										</p>
+			
+										<h5>Layout Responsiveness:</h5>
+										<p>The idea of developing for mobile at the time had absolutely zero reference to me and would most likely have seemed to be an impossible task given the amount of knowledge I had at the time.</p>
+			
+										<h5>Colours:</h5>
+										<p>The colour scheme had no general direction other than looking space-like. However, this did lead to all text and crucial parts of the page being clearly visible to a user.
+											Alongside this, the site does follow a theme with bold/blue headings and paragraphs using white text. </p>
+
+										<h4>Stand Out Features:</h4>
+										<ul>
+											<li>Working calendar</li>
+											<li>A functioning navigation bar</li>
+											<li>Windows that are scrollable inside</li>
+											<li>A working contact form</li>
+											<li>Interactive map via Google</li>
+										</ul>
+										<img class="project-pull-left" src="res/project-imgs/college/college_map.gif" alt="an image">
+										<h4>Design Process Summary:</h4>
+										<p>Given this project was an educational one and was developed at the very start of my introduction to web development, 
+											I’d say it has many aspects that need to be improved but as a first effort I was very satisfied with the outcome and it led me to developing a couple more sites that would later be used commercially.
+										</p>
+										<h5>Nav:</h5>
+										<p>	First thing to replace would be the navigation bar, simply due to it not being my own creation and its doesn’t quite fit with the rest of the site. Flow is key, and without it the site becomes very static and blocky looking.</p>
+										<h5>Responsiveness:</h5>
+										<p>	Now that I’ve dealt with more challenging projects and delved into the basics of mobile design, I’d say the site needs to be brought into the 21st century with a mobile friendly design.</p>
+										<h5>Layout:</h5>
+										<p>The site has a simple box model that works as intended however, the finer details such as image placement and text alignment needs more tinkering to be more tight within their containers and to give correct spacing/padding.</p>
+										<p>As a whole, the site would need to be developed from the ground up with a simple design board, concepts and schemes to help create a balanced design.</p>
+										<img class="project-pull-right" src="res/project-imgs/college/college_links.gif" alt="an image">
+								</div>
+							</div>
+							<!--	/Project Modal 3 End	-->
+				</figure>
+
+				<!-- Project Item 5 -->
+				<figure class="project-item">
+					<img src="res/project-imgs/andromedia.png" alt="Project 1">
+					<figcaption>
+						<h2 class="project-title">Andro Media</h2>
+						<p class="project-desc">A mobile app designed to teach Android programming</p>
+						<a href="#" class="project-link">More info</a>
+					</figcaption>
+						<!--	Project Modal 5	-->
+						<div class="project-modal">
+								<button class="modal-close">
+									<svg x="0px" y="0px"
+									viewBox="0 0 30 17">
+									<g transform="translate(-15 -15)">
+									<polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+										35.8,16.5 37,17.7 	"/>
+								</g>
+								</svg>
+								</button>
+								<div class="project-header">
+									<div class="project-title-box">
+										<h2 class="project-title">AndroMedia - 2017</h2>
+										<p class="project-subtitle">AndroMedia - Teaching you Android programming</p>
+									</div>
+								</div> <!-- /Project-Header -->
+								<div class="project-content">
+									<h3><i>Aim:</i></h3>
+									<p>Mobile application has become a dominating market in the computing industry, with thousands of apps whether they be gaming/social or personal being produced every single day. 
+										The market has become a leading industry in new technologies by producing efficient and compact applications on target hardware that would otherwise be ignored on personal computers or consoles. 
+										<br><br>
+										During my time at University I was tasked with creating an app that will teach the user a form of android programming by utilising a series of topics that will later have a quiz for the user. 
+										This quiz will be used to test the user on what they have learnt through the app whilst giving them a score to track their progress and give a competitive edge to using the app.
+									</p>
+									<h4>Time Period:</h4>
+									<p>
+										Given this project was an assignment at university the completion time was very strict with no extensions. Whilst juggling other projects due the project took around 3 months to complete.
+									</p>
+
+									<h4>App Structure</h4>
+									<p>
+										The app was heavily designed around simple button movements for maximum user interaction efficiency, whilst also being clean and sharp as to not overwhelm the user.  This idea of not overwhelming the user is a very high priority due to the nature of learning subjects and too much information at once can either deter or confuse many people. Thus, an ideal balance of text to images is needed to help breakdown this barrier.
+										<br><br>The main design of the app was themed around education. Thus, a chalkboard effect was used to give it the idea of education, whilst using a vibrant orange tone to break away from the dark blackboard background. This in turn was used with a chalk style writing like how a normal chalkboard is used to finish off the design.
+										<br><br>Finally, the app also features a pop up window for the help screen to help keep the app a little more efficient and is easier than transitioning to anew activity for a small amount of information that would be useful to a user.
+									</p>
+
+									<div class="gifs">
+									<img src="res/project-imgs/andromedia/andromedia_front.gif" alt="an image">
+									<img src="res/project-imgs/andromedia/andromedia_topics.gif" alt="an image">
+									<img src="res/project-imgs/andromedia/andromedia_quiz.gif" alt="an image">
+									<img src="res/project-imgs/andromedia/andromedia_timeline.gif" alt="an image">
+									</div>
+
+									<h4>Design Flow:</h4>
+									<p>When designing the concept for the mobile application a flow chart was needed to define the steps you would take to move around the application. After a few revisions, the following image demonstrates the route taken, defining easy access back to the home
+										screen with a single button press from anywhere in the app.
+									</p>
+									<img src="res/project-imgs/andromedia/andromedia_flow.png" alt="an image">
+									
+									<h3>Screenshots</h3>
+									<div class="screens">
+										<img src="res/project-imgs/andromedia/andromedia_front.png" alt="an image">
+										<img src="res/project-imgs/andromedia/andromedia_menu.png" alt="an image">
+										<img src="res/project-imgs/andromedia/andromedia_topics.png" alt="an image">
+										<img src="res/project-imgs/andromedia/andromedia_topics_text.png" alt="an image">
+										<img src="res/project-imgs/andromedia/andromedia_quiz.png" alt="an image">
+										<img src="res/project-imgs/andromedia/andromedia_construction.png" alt="an image">
+									</div>
+								</div>
+							</div>
+							<!--	/Project Modal 5 End	-->
+				</figure>
+
+					<!-- Project Item 4 
+				<figure class="project-item">
+					<img src="res/project-imgs/folder.jpg" alt="Project 1">
+					<figcaption>
+						<h2 class="project-title">Small Projects</h2>
+						<p class="project-desc">All my short works and W.I.P</p>
+						<a href="#" class="project-link">More info</a>
+					</figcaption>
+						Project Modal 4	
+						<div class="project-modal">
+								<button class="modal-close">
+									<svg x="0px" y="0px"
+									viewBox="0 0 30 17">
+									<g transform="translate(-15 -15)">
+									   <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+										   35.8,16.5 37,17.7 	"/>
+								   </g>
+								   </svg>
+								</button>
+								<div class="project-header">
+									<div class="project-title-box">
+										<h2 class="project-title">Tid-Bits</h2>
+										<p class="project-subtitle">Spare time projects</p>
+									</div>
+								</div> /Project-Header
+								<div class="project-content">
+									<img class="project-full-width" src="res/project-imgs/code.jpg" alt="an image">
+									<img class="project-pull-left" src="res/project-imgs/code.jpg" alt="an image">
+									<img class="project-pull-right" src="res/project-imgs/code.jpg" alt="an image">
+								</div>
+							</div>
+							/Project Modal 4 End
+				</figure>-->
+			</div>
+		</section>
+		
+		<footer>
+			<p>Find me on Social Media</p>
+			<div id="Contact" class="social-icons">
+				<a href="https://www.linkedin.com/in/jake-stewart-426416aa">
+					<img src="res/social/Linkedin.png" alt="LinkedIn">
+				</a>
+				<a href="https://www.facebook.com/Jake.Stew.95">
+					<img src="res/social/Facebook.png" alt="Facebook">
+				</a>
+			</div>
+
+			<p class="copyright">&#169; 2018 - Jake Stewart</p>
+		</footer>
+
+		<script src="myScript.js"></script>
+		<script>
+		/*	Smooth scrolling on nav links */	
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+					scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			});
+		});
+		</script>
+		
+	</body>
+</html>
