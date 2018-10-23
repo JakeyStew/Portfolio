@@ -12,6 +12,7 @@ body {
 	font-weight: 400;
 	background-color: #fff;
 	overflow-x: hidden;
+	background-image: url(res/what-the-hex.png)
 }
 
 .content {
