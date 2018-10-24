@@ -2,7 +2,7 @@
 <!--  ©Jake Stewart 2018 All Rights Reserved  !-->
 <html lang=en>
     <head>
-		<?xml encoding="UTF-8"?>
+		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" />
@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<header>
-		<h1 class="logo"><img src="res/logo/Logo_Horz_4x1_No_Drop.png" alt="Jake Stewart"></h1>
+		<h1 class="logo"><img src="res/logo/Logo_Horz_4x1_No_Drop.png" alt="Jake Stewart" width="100%" height="auto"></h1>
 		<input type="checkbox" id="nav-toggle" class="nav-toggle">
 		<nav>
 			<ul>
@@ -31,7 +31,7 @@
 		</div>
 		<section id="About" class="about">
 			<div class="about-middle">
-				<img src="res/about/about-me.png" alt="Me">
+				<img src="res/about/about-me.png" alt="Me" width="25%" height="auto">
 				<h2>All about me</h2>
 				<p>
 					After graduating in 2017 with a Master Level Mcomp Degree (Second Class Honours) in Computer Games Development, I spent the last year working as Junior Software Engineer in Tewkesbury, England. 
@@ -47,7 +47,7 @@
 			<div class="project-items">
 				<!-- Project Item 1 -->
 				<figure class="project-item featured">
-					<img src="res/project-imgs/mamsmatter-logo.png" alt="Project 1">
+					<img src="res/project-imgs/mamsmatter-logo.png" alt="Project 1" width="100%" height="auto">
 					<figcaption>
 						<h2 class="project-title">Mams Matter</h2>
 						<p class="project-desc">A small website for a support group business based within the Welsh valleys.</p>
@@ -56,7 +56,7 @@
 				</figure>
 				<!-- Project Item 2 -->
 				<figure class="project-item">
-					<img src="res/project-imgs/idrive-logo.png" alt="Project 1">
+					<img src="res/project-imgs/idrive-logo.png" alt="Project 1" width="100%" height="auto">
 					<figcaption>
 						<h2 class="project-title">I-Drive Learning</h2>
 						<p class="project-desc">A small driving instruction school based within Newport, S.Wales.</p>
@@ -65,7 +65,7 @@
 				</figure>
 					<!-- Project Item 3 -->
 				<figure class="project-item">
-					<img src="res/project-imgs/college-logo.png" alt="Project 1">
+					<img src="res/project-imgs/college-logo.png" alt="Project 1" width="100%" height="auto">
 					<figcaption>
 						<h2 class="project-title">BSA: British Space</h2>
 						<p class="project-desc">A site designed during my time spent at Coleg Gwent, S.Wales</p>
@@ -74,7 +74,7 @@
 				</figure>
 				<!-- Project Item 5 -->
 				<figure class="project-item">
-					<img src="res/project-imgs/andromedia.png" alt="Project 4">
+					<img src="res/project-imgs/andromedia.png" alt="Project 4" width="100%" height="auto">
 					<figcaption>
 						<h2 class="project-title">Andro Media</h2>
 						<p class="project-desc">A mobile app designed to teach Android programming</p>
@@ -86,33 +86,19 @@
 		<footer>
 			<p>Find me on Social Media</p>
 			<div id="Contact" class="social-icons">
-				<a href="https://www.linkedin.com/in/jake-stewart-426416aa">
-					<img src="res/social/Linkedin.png" alt="LinkedIn">
+				<a href="https://www.linkedin.com/in/jake-stewart-426416aa" >
+					<img src="res/social/Linkedin.png" alt="LinkedIn" width="100%" height="auto">
 				</a>
 				<a href="https://www.facebook.com/Jake.Stew.95">
-					<img src="res/social/Facebook.png" alt="Facebook">
+					<img src="res/social/Facebook.png" alt="Facebook" width="100%" height="auto">
 				</a>
 				<a href="https://github.com/JakeyStew">
-					<img src="res/social/Github.png" alt="GitHub">
+					<img src="res/social/Github.png" alt="GitHub" width="100%" height="auto">
 				</a>
 			</div>
 			<p class="copyright">&#169; 2018 - Jake Stewart</p>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script>
-		/*	Smooth scrolling on nav links */	
-		$(function() {
-			$('a[href*=#]:not([href=#])').click(function() {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-					scrollTop: target.offset().top
-					}, 1000);
-					return false;
-				}
-			});
-		});
-		</script>
+		<script src="myScripts.js"></script>
 	</body>
 </html>
